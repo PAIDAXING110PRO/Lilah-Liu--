@@ -136,6 +136,7 @@
     .case-kicker{color:var(--orange-soft);font-size:12px;letter-spacing:.15em}.case-story h3{margin:18px 0 18px;font-size:clamp(38px,4vw,56px);line-height:1.04;letter-spacing:-.045em}
     .case-story > p{margin:0 0 28px;color:var(--muted);font-size:18px;line-height:1.85}
     .case-flow{display:grid;gap:1px;border-radius:16px;overflow:hidden;background:var(--line)}
+    .case-flow-details > summary{display:none}
     .case-flow div{padding:17px;background:rgba(10,13,15,.94);display:grid;grid-template-columns:116px 1fr;gap:16px;align-items:start}.case-flow small{color:var(--faint);font-size:11px;letter-spacing:.1em}.case-flow p{margin:0;color:rgba(255,255,255,.82);font-size:15px;line-height:1.75}
     .case-visual{position:relative;min-height:520px;background:#111}
     .case-visual img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) brightness(.68)}
@@ -227,6 +228,49 @@
       .case-metrics{grid-template-columns:1fr;left:14px;right:14px;bottom:14px}.case-metric{padding:12px}.case-metric strong{font-size:18px}.case-visual{min-height:540px}
       .contact-links .button{width:100%}.experience-item{grid-template-columns:70px 1fr}
     }
+    /* Compact mobile reading order: key results first, supporting detail on demand. */
+    @media(max-width:790px){
+      .site-header{left:10px;right:10px;top:8px;min-height:46px;padding:5px 6px 5px 10px;gap:10px;border-radius:15px}
+      .brand{gap:8px}.brand-mark{width:30px;height:30px;font-size:10px}.brand strong{font-size:12px}.brand small{font-size:7px;margin-top:1px}
+      .menu-button{width:36px;height:36px;border-radius:10px}.main-nav{top:calc(100% + 7px)}
+      .section{min-height:0;padding:86px 16px 54px}.section-head{gap:10px;margin-bottom:19px}.eyebrow{margin-bottom:8px;font-size:9px}
+      .section-head h2{font-size:clamp(31px,8.8vw,43px);line-height:.98;letter-spacing:-.045em}.section-head p{font-size:13px;line-height:1.55}
+      .section-index{display:none}.transition-band{height:58px;margin:-29px 0}.transition-band span{font-size:8px;padding:7px 10px}
+      .hero{min-height:100svh;padding-top:82px;padding-bottom:48px;align-items:center}
+      .hero-grid{gap:14px}.hero-status{margin-bottom:16px;padding:7px 10px;font-size:8px}
+      .hero h1{font-size:clamp(36px,10.3vw,52px);line-height:.96;letter-spacing:-.065em}
+      .hero-intro{margin-top:16px;font-size:13px;line-height:1.55}
+      .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:20px}
+      .hero-actions .button{width:auto;min-height:44px;padding:0 8px;font-size:11px;white-space:nowrap}
+      .hero-foot{gap:10px;padding-top:12px;font-size:7px;line-height:1.35}.hero-foot > span:first-child{max-width:65%}.scroll-cue{gap:5px}.scroll-cue i{width:24px}
+      .case-switcher{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin-bottom:10px;padding:4px;border-radius:14px}
+      .case-tab{min-width:0;min-height:69px;padding:8px 7px;border-radius:10px}.case-tab small{font-size:8px}.case-tab strong{margin-top:5px;font-size:11px;line-height:1.25}
+      .case-panel{display:flex;flex-direction:column;gap:10px;min-height:0}
+      .case-visual{order:-1;width:100%;min-height:0;height:auto;aspect-ratio:16/10;margin:0;border-radius:18px}
+      .case-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+      .case-role{top:8px;left:8px;right:8px;width:max-content;max-width:calc(100% - 16px);padding:6px 8px;font-size:8px;letter-spacing:.04em;white-space:normal}
+      .case-metrics{left:8px;right:8px;bottom:8px;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+      .case-metric{min-width:0;padding:7px 6px;border-radius:9px}.case-metric strong{font-size:14px;line-height:1.1}.case-metric span{margin-top:3px;font-size:9px;line-height:1.2}
+      .case-story{display:flex;flex-direction:column;padding:17px;border-radius:18px}.case-kicker{font-size:9px;letter-spacing:.09em}
+      .case-story h3{margin:8px 0 9px;font-size:clamp(22px,6vw,29px);line-height:1.13;letter-spacing:-.035em}
+      .case-story > p{margin:0 0 12px;font-size:13px;line-height:1.55}
+      .proof-strip{order:1;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:0 0 10px}.proof-item{min-width:0;padding:9px 7px;border-radius:10px}.proof-item b{font-size:16px}.proof-item span{margin-top:4px;font-size:9px;line-height:1.3}
+      .case-flow-details{order:2}.case-flow-details > summary{display:flex;align-items:center;justify-content:space-between;min-height:39px;padding:0 11px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);font-size:11px;cursor:pointer;list-style:none}
+      .case-flow-details > summary::-webkit-details-marker{display:none}.case-flow-details > summary span{font-size:17px;transition:transform .25s}.case-flow-details[open] > summary span{transform:rotate(180deg)}
+      .case-flow{margin-top:7px}.case-flow div{grid-template-columns:76px 1fr;gap:8px;padding:10px}.case-flow small{font-size:9px;letter-spacing:.04em}.case-flow p{font-size:12px;line-height:1.45}
+      .collab-section .section-head{margin-bottom:18px}.conflict-card{display:block;margin-bottom:10px;border-radius:20px}
+      .conflict-intro{padding:17px 17px 12px;border:0}.conflict-intro small{font-size:8px}.conflict-intro h3{margin:8px 0;font-size:clamp(25px,7vw,32px);line-height:1.05}.conflict-intro p{font-size:11px;line-height:1.5}
+      .tension-grid{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding:0 13px 13px;background:transparent;-webkit-overflow-scrolling:touch}
+      .tension-grid:focus-visible,.workflow:focus-visible{outline:2px solid var(--orange-soft);outline-offset:2px}
+      .tension-grid::-webkit-scrollbar,.workflow::-webkit-scrollbar{display:none}
+      .tension{flex:0 0 min(72vw,265px);min-height:142px;padding:13px;border:1px solid var(--line);border-radius:13px;scroll-snap-align:start}
+      .tension b{width:26px;height:26px;border-radius:8px}.tension h4{margin:10px 0 5px;font-size:13px}.tension p{font-size:11px;line-height:1.45}
+      .workflow{display:flex;gap:9px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding:1px 1px 5px;-webkit-overflow-scrolling:touch}
+      .workflow-step{flex:0 0 min(73vw,270px);min-height:177px;padding:15px;border-radius:16px;scroll-snap-align:start}
+      .workflow-step::before{top:-4px;right:9px;font-size:65px}.workflow-step small{font-size:8px}.workflow-step h4{position:relative;margin:22px 0 8px;font-size:17px;line-height:1.17}.workflow-step p{position:relative;font-size:11px;line-height:1.48}.mini-artifact{display:none}
+      .feedback-demo{grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr);gap:5px;margin-top:10px;padding:9px;border-radius:15px}.feedback-demo article{padding:9px;border-radius:9px}.feedback-demo small{font-size:7px}.feedback-demo p{font-size:10px;line-height:1.45}.feedback-arrow{transform:none;font-size:13px}
+      .floating-mascot[data-zone="cases"],.floating-mascot[data-zone="collaboration"]{opacity:0;pointer-events:none}
+    }
     @media(prefers-reduced-motion:reduce){
       html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.reveal,.stagger>*{opacity:1!important;transform:none!important}
     }
@@ -310,7 +354,10 @@
             <div class="case-kicker" id="caseKicker">NORTH AMERICA / PERFORMANCE CREATIVE</div>
             <h3 id="caseTitle">从产品卖点，走到车主生活。</h3>
             <p id="caseSummary">面对高客单汽车产品，核心问题不是“功能讲得够不够多”，而是如何让北美车主快速看懂它与真实使用场景的关系。</p>
-            <div class="case-flow" id="caseFlow"></div>
+            <details class="case-flow-details" id="caseFlowDetails" open>
+              <summary>查看创意链路 <span aria-hidden="true">⌄</span></summary>
+              <div class="case-flow" id="caseFlow"></div>
+            </details>
             <div class="proof-strip" id="caseProof" aria-label="案例结果"></div>
           </article>
           <figure class="case-visual glass">
@@ -333,13 +380,13 @@
         </div>
         <div class="conflict-card glass reveal">
           <div class="conflict-intro"><small>REAL-WORLD TENSION</small><h3>更多素材，<br>同样资源。</h3><p>已验证方向需要快速扩量，但原始素材和制作资源有限；如果只做机械换字幕、换车型，内容会迅速同质化。</p></div>
-          <div class="tension-grid">
+          <div class="tension-grid" role="region" aria-label="协作角色，可左右滑动查看" tabindex="0">
             <article class="tension"><b>01</b><h4>投放 / 业务</h4><p>希望快速补量、承接窗口期，并尽可能延长已验证方向的生命周期。</p></article>
             <article class="tension"><b>02</b><h4>拍摄 / 剪辑</h4><p>排期已满，现有镜头有限；继续加工会出现画面重复和表达疲劳。</p></article>
             <article class="tension"><b>03</b><h4>内容负责人</h4><p>需要在速度、质量和创意差异之间做优先级判断，并让方案可执行。</p></article>
           </div>
         </div>
-        <div class="workflow stagger reveal">
+        <div class="workflow stagger reveal" role="region" aria-label="工作流程，可左右滑动查看" tabindex="0">
           <article class="workflow-step" data-step="01" style="--i:0"><small>CLARIFY</small><h4>把一句需求，变成一页Brief</h4><p>明确市场、人群、业务目标、已验证变量、待测试变量和交付优先级。</p><div class="mini-artifact"><em>CREATIVE BRIEF</em><span></span><span></span><span></span></div></article>
           <article class="workflow-step" data-step="02" style="--i:1"><small>DIVERGE</small><h4>先发散三档方案</h4><p>区分低成本扩量、局部补拍和全新创意路线，避免所有需求都进入同一制作方式。</p><div class="mini-artifact"><em>ROUTE MATRIX</em><span></span><span></span><span></span></div></article>
           <article class="workflow-step" data-step="03" style="--i:2"><small>PRIORITIZE</small><h4>拆分重拍与复用变量</h4><p>新人群、新场景需要生产；Hook、字幕、CTA和局部镜头则进入模块化复用。</p><div class="mini-artifact"><em>SHOT PRIORITY</em><span></span><span></span><span></span></div></article>
@@ -466,6 +513,11 @@
       document.querySelectorAll(".case-tab").forEach(function(tab){var active=Number(tab.dataset.case)===index;tab.classList.toggle("active",active);tab.setAttribute("aria-selected",String(active));});
     }
     document.querySelectorAll(".case-tab").forEach(function(tab){tab.addEventListener("click",function(){renderCase(Number(tab.dataset.case));});});renderCase(0);
+    var compactCaseMedia = window.matchMedia("(max-width:790px)");
+    var caseFlowDetails = document.getElementById("caseFlowDetails");
+    function syncCaseFlowDetails(){caseFlowDetails.open = !compactCaseMedia.matches;}
+    syncCaseFlowDetails();
+    compactCaseMedia.addEventListener("change", syncCaseFlowDetails);
 
     var works=[
       {title:"Model Y / 创意结构迭代",type:"performance",meta:"US / META",poster:"public/posters/modely.jpg",video:"public/videos/modely.mp4",description:"围绕前三秒Hook、使用场景和产品证明进行结构迭代。职责：洞察、脚本、创意方向与审核。"},

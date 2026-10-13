@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07090b">
+  <title>刘文静｜North America Creative Lab</title>
+  <meta name="description" content="刘文静，海外内容创意负责人。以北美文化洞察、创意策略、规模化生产与跨团队协作为核心的个人作品集。">
+  <meta property="og:title" content="刘文静｜North America Creative Lab">
+  <meta property="og:description" content="From cultural signals to creative systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="public/images/wenji-cosmos-home-r2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="image" href="public/images/wenji-cosmos-home-r2.png">
+  <link rel="preload" as="video" type="video/mp4" href="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261005_115944_095d91d4-030f-4e82-b42b-a388c0816d24.mp4">
+  <style>
+    :root{
+      --bg:#07090b;
+      --bg-soft:#0d1115;
+      --panel:rgba(18,22,26,.72);
+      --panel-strong:rgba(17,21,25,.9);
+      --text:#f5f4ef;
+      --muted:rgba(245,244,239,.62);
+      --faint:rgba(245,244,239,.36);
+      --line:rgba(255,255,255,.12);
+      --line-strong:rgba(255,255,255,.22);
+      --orange:#ff9857;
+      --orange-soft:#ffc18f;
+      --blue:#7bbef7;
+      --green:#a4e6b1;
+      --max:1240px;
+      --radius:26px;
+      --shadow:0 24px 80px rgba(0,0,0,.34);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--bg)}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"Avenir Next","Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;overflow-x:hidden}
+    body::before{
+      content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;
+      background:
+        radial-gradient(circle at 12% 18%,rgba(71,130,178,.12),transparent 31%),
+        radial-gradient(circle at 88% 42%,rgba(255,135,71,.09),transparent 25%),
+        linear-gradient(180deg,#060809 0%,#090d10 45%,#07090b 100%);
+    }
+    body::after{
+      content:"";position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.18;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+      mix-blend-mode:soft-light;
+    }
+    a{color:inherit}
+    button,select{font:inherit}
+    button{color:inherit}
+    img,video{display:block;max-width:100%}
+    .skip-link{position:fixed;left:16px;top:-80px;z-index:200;padding:12px 16px;border-radius:12px;background:#fff;color:#111;text-decoration:none}
+    .skip-link:focus{top:16px}
+    .scroll-progress{position:fixed;left:0;top:0;z-index:120;width:100%;height:2px;background:transparent}
+    .scroll-progress i{display:block;width:100%;height:100%;background:linear-gradient(90deg,var(--blue),var(--orange));transform:scaleX(0);transform-origin:left}
+    .site-header{
+      position:fixed;left:20px;right:20px;top:18px;z-index:100;
+      min-height:58px;padding:9px 10px 9px 18px;border:1px solid rgba(255,255,255,.13);
+      border-radius:18px;background:rgba(6,9,11,.68);box-shadow:0 14px 45px rgba(0,0,0,.28);
+      backdrop-filter:blur(20px) saturate(130%);-webkit-backdrop-filter:blur(20px) saturate(130%);
+      display:flex;align-items:center;gap:24px;transition:background .3s,border-color .3s,transform .3s;
+    }
+    .site-header.scrolled{background:rgba(6,9,11,.88);border-color:rgba(255,255,255,.19)}
+    .brand{display:flex;align-items:center;gap:10px;min-width:max-content;text-decoration:none}
+    .brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(145deg,#f4f2ed,#bfc5c9);color:#101315;font-size:11px;font-weight:800;letter-spacing:.05em}
+    .brand strong{display:block;font-size:14px;letter-spacing:.02em}.brand small{display:block;color:var(--faint);font-size:9px;letter-spacing:.13em;margin-top:2px}
+    .main-nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+    .main-nav a{position:relative;padding:10px 11px;border-radius:11px;color:var(--muted);text-decoration:none;font-size:12px;white-space:nowrap;transition:color .25s,background .25s}
+    .main-nav a:hover,.main-nav a.active{color:#fff;background:rgba(255,255,255,.075)}
+    .main-nav a.active::after{content:"";position:absolute;left:13px;right:13px;bottom:5px;height:1px;background:var(--orange)}
+    .header-cta{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 17px;border-radius:12px;background:#f4f2ed;color:#0b0e10;text-decoration:none;font-size:12px;font-weight:700}
+    .menu-button{display:none;margin-left:auto;width:42px;height:42px;border:0;border-radius:12px;background:rgba(255,255,255,.08);cursor:pointer}
+    .menu-button span,.menu-button::before,.menu-button::after{content:"";display:block;width:18px;height:1px;margin:4px auto;background:#fff;transition:.25s}
+    .menu-button.open span{opacity:0}.menu-button.open::before{transform:translateY(5px) rotate(45deg)}.menu-button.open::after{transform:translateY(-5px) rotate(-45deg)}
+    main{position:relative}
+    .section{position:relative;min-height:100vh;padding:132px 26px 112px;isolation:isolate}
+    .section-inner{width:min(var(--max),100%);margin:0 auto}
+    .section-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:54px;align-items:end;margin-bottom:54px}
+    .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:15px;color:var(--orange-soft);font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:30px;height:1px;background:currentColor}
+    .section-head h2{margin:0;font-size:clamp(42px,6.4vw,88px);line-height:.92;letter-spacing:-.06em;font-weight:680}
+    .section-head h2 em{font-style:normal;color:var(--muted)}
+    .section-head p{margin:0;color:var(--muted);font-size:15px;line-height:1.8}
+    .section-index{position:absolute;right:max(26px,calc((100vw - var(--max))/2));top:100px;color:rgba(255,255,255,.08);font-size:clamp(80px,13vw,180px);font-weight:750;line-height:1;letter-spacing:-.08em;z-index:-1}
+    .reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.72,.2,1),transform .8s cubic-bezier(.2,.72,.2,1)}
+    .reveal.visible{opacity:1;transform:none}
+    .stagger > *{opacity:0;transform:translateY(22px)}
+    .stagger.visible > *{animation:rise .72s cubic-bezier(.2,.72,.2,1) forwards;animation-delay:calc(var(--i,0) * 70ms)}
+    @keyframes rise{to{opacity:1;transform:none}}
+    .transition-band{position:relative;height:110px;margin:-55px 0;z-index:12;pointer-events:none}
+    .transition-band::before{content:"";position:absolute;left:50%;top:50%;width:min(760px,76vw);height:1px;transform:translate(-50%,-50%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent)}
+    .transition-band span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:#090c0e;color:var(--faint);font-size:9px;letter-spacing:.18em}
+    .glass{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.018));box-shadow:var(--shadow);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+
+    /* HERO */
+    .hero{min-height:100svh;padding-top:128px;display:flex;align-items:flex-end;overflow:hidden}
+    .hero-media{position:absolute;inset:0;z-index:-3;background:#081017}
+    .hero-media::before{content:"";position:absolute;inset:-4%;background:url("public/images/wenji-cosmos-home-r2.png") 50% 52%/cover no-repeat;transform:scale(1.04);animation:heroDrift 18s ease-in-out infinite alternate}
+    .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,6,8,.9) 0%,rgba(3,6,8,.48) 48%,rgba(3,6,8,.1) 75%),linear-gradient(180deg,rgba(4,7,9,.18),rgba(4,7,9,.18) 55%,#07090b 100%)}
+    @keyframes heroDrift{to{transform:scale(1.09) translate3d(-1.5%,.8%,0)}}
+    .star-layer{position:absolute;inset:0;z-index:-2;pointer-events:none;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.2px);background-size:92px 92px;opacity:.2;animation:stars 26s linear infinite}
+    @keyframes stars{to{transform:translate3d(0,92px,0)}}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.55fr);align-items:end;gap:60px;width:min(var(--max),100%);margin:0 auto}
+    .hero-status{display:inline-flex;align-items:center;gap:9px;margin-bottom:24px;padding:9px 12px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(6,9,11,.38);font-size:10px;letter-spacing:.11em;color:rgba(255,255,255,.8)}
+    .hero-status i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(164,230,177,.1);animation:pulse 1.8s infinite}
+    @keyframes pulse{50%{box-shadow:0 0 0 9px rgba(164,230,177,0)}}
+    .hero h1{max-width:940px;margin:0;font-size:clamp(64px,8vw,118px);line-height:.82;letter-spacing:-.075em;font-weight:730;text-shadow:0 8px 32px rgba(0,0,0,.28)}
+    .hero h1 span{display:block}.hero h1 .soft{color:rgba(255,255,255,.55)}
+    .hero-intro{max-width:690px;margin:25px 0 0;color:rgba(255,255,255,.72);font-size:clamp(15px,1.4vw,18px);line-height:1.7}
+    .hero-actions{display:flex;align-items:center;gap:12px;margin-top:29px}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 19px;border:1px solid var(--line-strong);border-radius:14px;text-decoration:none;background:rgba(255,255,255,.04);font-size:12px;cursor:pointer;transition:transform .25s,background .25s,border-color .25s}
+    .button:hover{transform:translateY(-3px);background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
+    .button.primary{border-color:#fff;background:#f5f3ef;color:#090c0e;font-weight:700}
+    .profile-card{position:relative;padding:22px;border-radius:24px;overflow:hidden}
+    .profile-top{display:flex;gap:14px;align-items:center}
+    .avatar{width:58px;height:58px;border-radius:18px;object-fit:cover;border:1px solid rgba(255,255,255,.18)}
+    .profile-top strong{display:block;font-size:16px}.profile-top span{display:block;color:var(--muted);font-size:11px;margin-top:5px}
+    .profile-card p{margin:18px 0 20px;color:var(--muted);font-size:12px;line-height:1.7}
+    .hero-metrics{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+    .hero-metric{padding:17px 10px 0 0}.hero-metric strong{display:block;font-size:24px;letter-spacing:-.04em}.hero-metric span{display:block;margin-top:4px;color:var(--faint);font-size:9px;line-height:1.4}
+    .hero-foot{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding-top:35px;color:var(--faint);font-size:9px;letter-spacing:.12em}
+    .scroll-cue{display:flex;align-items:center;gap:10px}.scroll-cue i{display:block;width:52px;height:1px;background:rgba(255,255,255,.35);position:relative;overflow:hidden}.scroll-cue i::after{content:"";position:absolute;inset:0;background:#fff;transform:translateX(-100%);animation:scan 2.1s infinite}
+    @keyframes scan{to{transform:translateX(100%)}}
+
+    /* CASES */
+    .case-section{background:linear-gradient(180deg,rgba(255,255,255,.012),transparent)}
+    .case-switcher{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px;padding:8px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+    .case-tab{padding:16px;border:1px solid transparent;border-radius:13px;background:transparent;text-align:left;cursor:pointer;color:var(--muted);transition:.25s}
+    .case-tab small{display:block;color:var(--faint);font-size:10px;letter-spacing:.13em}.case-tab strong{display:block;margin-top:7px;font-size:15px;line-height:1.35}
+    .case-tab.active{border-color:var(--line-strong);background:rgba(255,255,255,.08);color:#fff}
+    .case-panel{display:grid;grid-template-columns:minmax(0,.95fr) minmax(380px,1.05fr);gap:15px;min-height:600px}
+    .case-story,.case-visual{border-radius:28px;overflow:hidden}
+    .case-story{padding:40px}
+    .case-kicker{color:var(--orange-soft);font-size:12px;letter-spacing:.15em}.case-story h3{margin:18px 0 18px;font-size:clamp(38px,4vw,56px);line-height:1.04;letter-spacing:-.045em}
+    .case-story > p{margin:0 0 28px;color:var(--muted);font-size:18px;line-height:1.85}
+    .case-flow{display:grid;gap:1px;border-radius:16px;overflow:hidden;background:var(--line)}
+    .case-flow-details > summary{display:none}
+    .case-flow div{padding:17px;background:rgba(10,13,15,.94);display:grid;grid-template-columns:116px 1fr;gap:16px;align-items:start}.case-flow small{color:var(--faint);font-size:11px;letter-spacing:.1em}.case-flow p{margin:0;color:rgba(255,255,255,.82);font-size:15px;line-height:1.75}
+    .case-visual{position:relative;min-height:520px;background:#111}
+    .case-visual img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) brightness(.68)}
+    .case-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,rgba(5,7,8,.92))}
+    .case-metrics{position:absolute;left:24px;right:24px;bottom:24px;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .case-metric{padding:16px;border:1px solid rgba(255,255,255,.15);border-radius:15px;background:rgba(6,9,11,.65);backdrop-filter:blur(13px)}
+    .case-metric strong{display:block;font-size:24px}.case-metric span{display:block;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.5}
+    .case-role{position:absolute;left:24px;top:24px;z-index:2;padding:10px 13px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(6,9,11,.62);font-size:10px;letter-spacing:.11em}
+
+    /* COLLABORATION */
+    .collab-section{background:radial-gradient(circle at 50% 50%,rgba(123,190,247,.06),transparent 48%)}
+    .conflict-card{display:grid;grid-template-columns:.8fr 1.2fr;border-radius:28px;overflow:hidden;margin-bottom:17px}
+    .conflict-intro{padding:38px;border-right:1px solid var(--line)}
+    .conflict-intro small{color:var(--orange-soft);font-size:9px;letter-spacing:.15em}.conflict-intro h3{margin:15px 0 18px;font-size:clamp(32px,4vw,58px);line-height:.98;letter-spacing:-.055em}.conflict-intro p{margin:0;color:var(--muted);font-size:12px;line-height:1.75}
+    .tension-grid{display:flex;gap:1px;background:var(--line)}
+    .tension{flex:1 1 0;min-width:0;padding:30px 22px;background:rgba(10,13,15,.86);transition:flex-grow .58s cubic-bezier(.22,1,.36,1),background .4s ease,box-shadow .4s ease}
+    .tension b{display:grid;place-items:center;width:33px;height:33px;border-radius:10px;background:rgba(255,255,255,.08);font-size:10px}.tension h4{margin:24px 0 8px;font-size:14px}.tension p{margin:0;color:var(--muted);font-size:10px;line-height:1.65}
+    @media(min-width:791px){
+      .tension-grid:hover .tension{flex-grow:.78}
+      .tension-grid .tension:hover{flex-grow:1.85;background:linear-gradient(145deg,rgba(31,39,44,.97),rgba(12,17,20,.98));box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+    }
+    .workflow{display:flex;gap:12px}
+    .workflow-step{position:relative;flex:1 1 0;min-width:0;min-height:330px;padding:23px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.025);overflow:hidden;transition:flex-grow .58s cubic-bezier(.22,1,.36,1),background .4s ease,border-color .4s ease,box-shadow .4s ease}
+    @media(min-width:1021px){
+      .workflow:hover .workflow-step{flex-grow:.78}
+      .workflow .workflow-step:hover{flex-grow:1.85;background:linear-gradient(150deg,rgba(28,35,39,.96),rgba(12,16,19,.98));border-color:rgba(255,255,255,.2);box-shadow:0 14px 36px rgba(0,0,0,.2)}
+    }
+    .workflow-step::before{content:attr(data-step);position:absolute;right:12px;top:-8px;color:rgba(255,255,255,.05);font-size:90px;font-weight:800;letter-spacing:-.08em}
+    .workflow-step small{color:var(--orange-soft);font-size:8px;letter-spacing:.13em}.workflow-step h4{margin:46px 0 12px;font-size:20px;line-height:1.1}.workflow-step p{margin:0;color:var(--muted);font-size:10px;line-height:1.65}
+    .mini-artifact{position:absolute;left:17px;right:17px;bottom:17px;padding:12px;border:1px solid rgba(255,255,255,.1);border-radius:13px;background:rgba(4,6,8,.48)}
+    .mini-artifact span{display:block;height:4px;margin:6px 0;border-radius:4px;background:rgba(255,255,255,.12)}.mini-artifact span:nth-child(2){width:72%}.mini-artifact span:nth-child(3){width:88%}.mini-artifact em{font-style:normal;color:var(--faint);font-size:7px;letter-spacing:.12em}
+    .feedback-demo{display:grid;grid-template-columns:1fr 34px 1fr;gap:12px;align-items:center;margin-top:18px;padding:22px;border:1px solid var(--line);border-radius:22px}
+    .feedback-demo article{padding:18px;border-radius:15px;background:rgba(255,255,255,.035)}.feedback-demo small{color:var(--faint);font-size:8px;letter-spacing:.12em}.feedback-demo p{margin:9px 0 0;color:var(--muted);font-size:11px;line-height:1.6}.feedback-demo article:last-child p{color:rgba(255,255,255,.84)}.feedback-arrow{text-align:center;color:var(--orange)}
+
+    /* WORKS + CONTACT */
+    .works-section{min-height:auto;padding-bottom:52px}
+    .works-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:22px}
+    .work-filters{display:flex;gap:6px;flex-wrap:wrap}.work-filter{height:37px;padding:0 13px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--muted);font-size:9px;cursor:pointer}.work-filter.active{background:#f5f3ef;color:#0b0e10;border-color:#fff}
+    .rail-controls{display:flex;gap:7px}.rail-controls button{width:40px;height:40px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.04);cursor:pointer}
+    .works-rail{display:flex;gap:13px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:5px 0 26px}.works-rail::-webkit-scrollbar{display:none}
+    .work-card{flex:0 0 clamp(235px,25vw,330px);scroll-snap-align:start;position:relative;aspect-ratio:4/5;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#101316;cursor:pointer}
+    .work-card img{width:100%;height:100%;object-fit:cover;filter:saturate(.76) brightness(.72);transition:.55s}.work-card:hover img{transform:scale(1.04);filter:saturate(.92) brightness(.79)}
+    .work-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 33%,rgba(3,5,6,.92))}
+    .work-card-top{position:absolute;left:14px;right:14px;top:14px;z-index:2;display:flex;justify-content:space-between;color:rgba(255,255,255,.68);font-size:8px;letter-spacing:.11em}
+    .work-play{display:grid;place-items:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:rgba(5,7,8,.36);backdrop-filter:blur(10px)}
+    .work-copy{position:absolute;left:18px;right:18px;bottom:17px;z-index:2}.work-copy small{color:var(--orange-soft);font-size:8px;letter-spacing:.12em}.work-copy h3{margin:8px 0 8px;font-size:20px;line-height:1.08}.work-copy p{margin:0;color:var(--muted);font-size:9px;line-height:1.5}
+    .contact-panel{position:relative;margin-top:64px;padding:48px;border-radius:30px;overflow:hidden}
+    .contact-panel::before{content:"";position:absolute;right:-40px;bottom:-105px;width:340px;height:340px;background:url("public/images/wenji-perch-r2.png") center/contain no-repeat;opacity:.45;pointer-events:none}
+    .contact-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:60px}
+    .contact-panel h2{margin:0;font-size:clamp(45px,7vw,96px);line-height:.88;letter-spacing:-.065em}
+    .contact-panel h2 span{color:var(--muted)}
+    .contact-panel p{max-width:610px;margin:24px 0;color:var(--muted);font-size:13px;line-height:1.75}
+    .contact-links{display:flex;gap:8px;flex-wrap:wrap}
+    .experience{display:grid;gap:14px;align-content:start}.experience-item{display:grid;grid-template-columns:86px 1fr;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}.experience-item time{color:var(--faint);font-size:9px;line-height:1.5}.experience-item strong{font-size:12px}.experience-item span{display:block;margin-top:5px;color:var(--muted);font-size:9px;line-height:1.45}
+    .footer-line{display:flex;justify-content:space-between;gap:20px;margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--faint);font-size:8px;letter-spacing:.12em}
+
+    /* DIALOGS */
+    dialog{width:min(920px,calc(100vw - 28px));max-height:88svh;padding:0;border:1px solid var(--line-strong);border-radius:26px;background:rgba(8,11,13,.96);color:#fff;box-shadow:0 30px 100px rgba(0,0,0,.72);backdrop-filter:blur(20px)}
+    dialog::backdrop{background:rgba(0,0,0,.7);backdrop-filter:blur(7px)}
+    .dialog-close{position:absolute;right:14px;top:14px;z-index:5;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:rgba(8,11,13,.72);cursor:pointer}
+    .video-dialog{width:min(1080px,calc(100vw - 28px));overflow:hidden}.video-shell{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);min-height:580px}.video-shell video{width:100%;height:100%;max-height:80svh;object-fit:contain;background:#000}.video-info{padding:38px;align-self:center}.video-info small{color:var(--orange-soft);font-size:9px;letter-spacing:.12em}.video-info h3{margin:13px 0;font-size:34px;line-height:1}.video-info p{color:var(--muted);font-size:11px;line-height:1.7}
+    .floating-mascot{position:fixed;right:18px;bottom:14px;z-index:70;width:80px;pointer-events:none;filter:drop-shadow(0 12px 22px rgba(0,0,0,.38));transition:transform .65s cubic-bezier(.2,.72,.2,1),opacity .3s}
+    .floating-mascot img{width:100%}.floating-mascot[data-zone="radar"]{transform:translateY(-6px) rotate(-5deg)}.floating-mascot[data-zone="ideas"]{transform:translateY(-10px) rotate(5deg)}.floating-mascot[data-zone="contact"]{opacity:0}
+    .proof-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:24px}.proof-item{padding:16px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}.proof-item b{display:block;font-size:20px}.proof-item span{display:block;margin-top:6px;color:var(--muted);font-size:9px;line-height:1.45}.work-count{color:var(--orange-soft);font-size:10px;letter-spacing:.11em}.video-loading{position:absolute;inset:0;display:grid;place-items:center;background:#050607;color:var(--muted);font-size:11px;letter-spacing:.1em;z-index:1}.video-loading.hidden{display:none}.video-error{color:#fff;padding:20px;text-align:center}.swipe-hint{display:none;color:var(--faint);font-size:9px;margin-top:10px}
+
+    @media(max-width:1020px){
+      .site-header{left:14px;right:14px}.main-nav a{padding:10px 8px;font-size:11px}.header-cta{display:none}
+      .hero-grid{grid-template-columns:1fr .48fr;gap:28px}.hero h1{font-size:clamp(58px,9vw,92px)}
+      .radar-layout{grid-template-columns:1fr}
+      .idea-card,.idea-card:nth-child(n){grid-column:span 6}
+      .case-panel{grid-template-columns:1fr 1fr}.case-story{padding:30px}
+      .conflict-card{grid-template-columns:1fr}.conflict-intro{border-right:0;border-bottom:1px solid var(--line)}
+      .workflow{display:grid;grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:790px){
+      .section{padding:112px 18px 88px}.section-head{grid-template-columns:1fr;gap:20px;margin-bottom:34px}.section-head h2{font-size:clamp(42px,13vw,68px)}.section-index{top:92px;right:18px}
+      .site-header{top:12px;min-height:54px;padding:7px 8px 7px 14px}.menu-button{display:block}.main-nav{position:absolute;left:0;right:0;top:64px;display:none;padding:9px;border:1px solid var(--line);border-radius:16px;background:rgba(6,9,11,.95);box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.main-nav.open{display:flex}.main-nav a{height:44px;display:flex;align-items:center;padding:0 13px}.main-nav a.active::after{display:none}
+      .hero{padding-top:102px;align-items:flex-end}.hero-media::before{background-position:62% 50%}.hero-media::after{background:linear-gradient(180deg,rgba(4,7,9,.2),rgba(4,7,9,.3) 36%,rgba(4,7,9,.94) 75%,#07090b)}
+      .hero-grid{grid-template-columns:1fr;gap:22px}.hero h1{font-size:clamp(54px,15vw,80px);line-height:.87}.hero-intro{font-size:14px}.profile-card{display:none}.hero-actions{flex-wrap:wrap}.hero-foot{padding-top:22px}
+      .case-switcher{grid-template-columns:1fr}.case-panel{grid-template-columns:1fr;min-height:0}.case-story{padding:25px}.case-visual{min-height:440px}.case-flow div{grid-template-columns:94px 1fr;gap:12px}.case-story > p{font-size:17px}.case-flow p{font-size:15px}.case-tab strong{font-size:16px}
+      .tension-grid{display:grid;grid-template-columns:1fr}.workflow{grid-template-columns:1fr}.workflow-step{min-height:285px}.feedback-demo{grid-template-columns:1fr}.feedback-arrow{transform:rotate(90deg)}
+      .works-toolbar{align-items:flex-end}.work-card{flex-basis:78vw}.contact-panel{padding:30px 22px}.contact-grid{grid-template-columns:1fr}.contact-panel::before{opacity:.18}.footer-line{flex-direction:column}
+      .idea-dialog-content,.video-shell{grid-template-columns:1fr}.idea-dialog-media{min-height:250px;max-height:300px}.idea-dialog-copy{padding:27px}.video-shell{min-height:0}.video-shell video{height:48svh}.video-info{padding:25px}
+      .floating-mascot{width:64px;right:9px;bottom:7px}
+      .proof-strip{grid-template-columns:1fr}.swipe-hint{display:block}.video-shell{max-height:92svh;overflow:auto}.video-shell video{height:auto;max-height:58svh;min-height:260px}.video-info{position:relative}.work-card{flex-basis:min(82vw,340px)}
+    }
+    @media(max-width:520px){
+      .hero h1{font-size:clamp(49px,15vw,70px)}.hero-status{font-size:8px}.hero-actions .button{width:100%}.hero-foot{font-size:8px}
+      .case-metrics{grid-template-columns:1fr;left:14px;right:14px;bottom:14px}.case-metric{padding:12px}.case-metric strong{font-size:18px}.case-visual{min-height:540px}
+      .contact-links .button{width:100%}.experience-item{grid-template-columns:70px 1fr}
+    }
+    /* Compact mobile reading order: key results first, supporting detail on demand. */
+    @media(max-width:790px){
+      .site-header{left:10px;right:10px;top:8px;min-height:46px;padding:5px 6px 5px 10px;gap:10px;border-radius:15px}
+      .brand{gap:8px}.brand-mark{width:30px;height:30px;font-size:10px}.brand strong{font-size:12px}.brand small{font-size:7px;margin-top:1px}
+      .menu-button{width:36px;height:36px;border-radius:10px}.main-nav{top:calc(100% + 7px)}
+      .section{min-height:0;padding:86px 16px 54px}.section-head{gap:10px;margin-bottom:19px}.eyebrow{margin-bottom:8px;font-size:9px}
+      .section-head h2{font-size:clamp(31px,8.8vw,43px);line-height:.98;letter-spacing:-.045em}.section-head p{font-size:13px;line-height:1.55}
+      .section-index{display:none}.transition-band{height:58px;margin:-29px 0}.transition-band span{font-size:8px;padding:7px 10px}
+      .hero{min-height:100svh;padding-top:82px;padding-bottom:48px;align-items:center}
+      .hero-grid{gap:14px}.hero-status{margin-bottom:16px;padding:7px 10px;font-size:8px}
+      .hero h1{font-size:clamp(36px,10.3vw,52px);line-height:.96;letter-spacing:-.065em}
+      .hero-intro{margin-top:16px;font-size:13px;line-height:1.55}
+      .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:20px}
+      .hero-actions .button{width:auto;min-height:44px;padding:0 8px;font-size:11px;white-space:nowrap}
+      .hero-foot{gap:10px;padding-top:12px;font-size:7px;line-height:1.35}.hero-foot > span:first-child{max-width:65%}.scroll-cue{gap:5px}.scroll-cue i{width:24px}
+      .case-switcher{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin-bottom:10px;padding:4px;border-radius:14px}
+      .case-tab{min-width:0;min-height:69px;padding:8px 7px;border-radius:10px}.case-tab small{font-size:8px}.case-tab strong{margin-top:5px;font-size:11px;line-height:1.25}
+      .case-panel{display:flex;flex-direction:column;gap:10px;min-height:0}
+      .case-visual{order:-1;width:100%;min-height:0;height:auto;aspect-ratio:16/10;margin:0;border-radius:18px}
+      .case-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+      .case-role{top:8px;left:8px;right:8px;width:max-content;max-width:calc(100% - 16px);padding:6px 8px;font-size:8px;letter-spacing:.04em;white-space:normal}
+      .case-metrics{left:8px;right:8px;bottom:8px;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+      .case-metric{min-width:0;padding:7px 6px;border-radius:9px}.case-metric strong{font-size:14px;line-height:1.1}.case-metric span{margin-top:3px;font-size:9px;line-height:1.2}
+      .case-story{display:flex;flex-direction:column;padding:17px;border-radius:18px}.case-kicker{font-size:9px;letter-spacing:.09em}
+      .case-story h3{margin:8px 0 9px;font-size:clamp(22px,6vw,29px);line-height:1.13;letter-spacing:-.035em}
+      .case-story > p{margin:0 0 12px;font-size:13px;line-height:1.55}
+      .proof-strip{order:1;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:0 0 10px}.proof-item{min-width:0;padding:9px 7px;border-radius:10px}.proof-item b{font-size:16px}.proof-item span{margin-top:4px;font-size:9px;line-height:1.3}
+      .case-flow-details{order:2}.case-flow-details > summary{display:flex;align-items:center;justify-content:space-between;min-height:39px;padding:0 11px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);font-size:11px;cursor:pointer;list-style:none}
+      .case-flow-details > summary::-webkit-details-marker{display:none}.case-flow-details > summary span{font-size:17px;transition:transform .25s}.case-flow-details[open] > summary span{transform:rotate(180deg)}
+      .case-flow{margin-top:7px}.case-flow div{grid-template-columns:76px 1fr;gap:8px;padding:10px}.case-flow small{font-size:9px;letter-spacing:.04em}.case-flow p{font-size:12px;line-height:1.45}
+      .collab-section .section-head{margin-bottom:18px}.conflict-card{display:block;margin-bottom:10px;border-radius:20px}
+      .conflict-intro{padding:17px 17px 12px;border:0}.conflict-intro small{font-size:8px}.conflict-intro h3{margin:8px 0;font-size:clamp(25px,7vw,32px);line-height:1.05}.conflict-intro p{font-size:11px;line-height:1.5}
+      .tension-grid{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding:0 13px 13px;background:transparent;-webkit-overflow-scrolling:touch}
+      .tension-grid:focus-visible,.workflow:focus-visible{outline:2px solid var(--orange-soft);outline-offset:2px}
+      .tension-grid::-webkit-scrollbar,.workflow::-webkit-scrollbar{display:none}
+      .tension{flex:0 0 min(72vw,265px);min-height:142px;padding:13px;border:1px solid var(--line);border-radius:13px;scroll-snap-align:start}
+      .tension b{width:26px;height:26px;border-radius:8px}.tension h4{margin:10px 0 5px;font-size:13px}.tension p{font-size:11px;line-height:1.45}
+      .workflow{display:flex;gap:9px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding:1px 1px 5px;-webkit-overflow-scrolling:touch}
+      .workflow-step{flex:0 0 min(73vw,270px);min-height:177px;padding:15px;border-radius:16px;scroll-snap-align:start}
+      .workflow-step::before{top:-4px;right:9px;font-size:65px}.workflow-step small{font-size:8px}.workflow-step h4{position:relative;margin:22px 0 8px;font-size:17px;line-height:1.17}.workflow-step p{position:relative;font-size:11px;line-height:1.48}.mini-artifact{display:none}
+      .feedback-demo{grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr);gap:5px;margin-top:10px;padding:9px;border-radius:15px}.feedback-demo article{padding:9px;border-radius:9px}.feedback-demo small{font-size:7px}.feedback-demo p{font-size:10px;line-height:1.45}.feedback-arrow{transform:none;font-size:13px}
+      .floating-mascot[data-zone="cases"],.floating-mascot[data-zone="collaboration"]{opacity:0;pointer-events:none}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.reveal,.stagger>*{opacity:1!important;transform:none!important}
+    }
+    /* PARTICLES RADAR */
+    .radar-section{position:relative;height:100svh;min-height:560px;padding:0;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 60%,#111b2a 0%,#070c15 45%,#02050b 100%)}
+    .radar-section::before{display:none}
+    .radar-particles-fallback{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;opacity:.82}
+    .radar-particles-root{position:absolute;inset:0;z-index:1}
+    .radar-particles-root .particles-container{width:100%;height:100%}
+  </style>
+  <link rel="stylesheet" href="public/scripts/radar-particles.css">
+  <link rel="stylesheet" href="public/scripts/radar-labels.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="scroll-progress" aria-hidden="true"><i id="scrollProgress"></i></div>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="返回首页">
+      <span class="brand-mark">LJ</span>
+      <span><strong>刘文静</strong><small>CREATIVE LAB</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主要导航">
+      <a href="#home" class="active">首页</a>
+      <a href="#radar">创意雷达</a>
+      <a href="#cases">深度案例</a>
+      <a href="#collaboration">团队协作</a>
+      <a href="#works">作品与联系</a>
+    </nav>
+    <a class="header-cta" href="mailto:18638658809@163.com">LET'S TALK ↗</a>
+    <button class="menu-button" id="menuButton" type="button" aria-label="打开导航" aria-expanded="false"><span></span></button>
+  </header>
+
+  <main id="main">
+    <section class="section hero" id="home" data-zone="home">
+      <div class="hero-media"></div><div class="star-layer"></div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-status"><i></i> NORTH AMERICA CREATIVE LAB · 2026</div>
+          <h1><span>From Cultural</span><span class="soft">Signals to</span><span>Creative Systems.</span></h1>
+          <p class="hero-intro">从北美文化洞察出发，把用户情绪、生活场景与平台趋势，转化为可落地、可验证、可规模化的创意内容。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#radar">进入创意雷达 <span>↓</span></a>
+            <a class="button" href="#works">查看代表作品 <span>↗</span></a>
+          </div>
+        </div>
+        <aside class="profile-card glass reveal">
+          <div class="profile-top"><img class="avatar" src="public/images/avatar.jpg" alt="刘文静头像"><div><strong>刘文静 Lilah Liu</strong><span>海外内容创意负责人</span></div></div>
+          <p>覆盖北美、英国、欧洲与澳洲市场，负责从用户洞察、创意策划、脚本与拍摄，到团队协作、数据复盘与规模化内容供给的完整链路。</p>
+          <div class="hero-metrics">
+            <div class="hero-metric"><strong>20+</strong><span>海外产品与项目经验</span></div>
+            <div class="hero-metric"><strong>4</strong><span>核心海外市场</span></div>
+            <div class="hero-metric"><strong>+67%</strong><span>月均素材供给提升</span></div>
+            <div class="hero-metric"><strong>40%+</strong><span>AI生产效率提升</span></div>
+          </div>
+        </aside>
+        <div class="hero-foot"><span>CONTENT STRATEGY / CREATIVE DIRECTION / AI WORKFLOW</span><span class="scroll-cue">SCROLL TO EXPLORE <i></i></span></div>
+      </div>
+    </section>
+
+    <section class="section radar-section" id="radar" data-zone="radar">
+      <canvas class="radar-particles-fallback" id="radarParticlesFallback" aria-hidden="true"></canvas>
+      <div class="radar-particles-root" id="radarParticlesRoot" aria-label="缓慢飘动的互动粒子画面"></div>
+    </section>
+
+    <div class="transition-band"><span>01 · CASE STUDIES</span></div>
+
+    <section class="section case-section" id="cases" data-zone="cases">
+      <span class="section-index">01</span>
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">Case Studies</div><h2>创意不是灵感，<br><em>是完整链路。</em></h2></div>
+          <p>从文化信号与商业问题出发，形成创意路线、组织生产、上线验证，再将有效方法沉淀为可复制的内容系统。</p>
+        </div>
+        <div class="case-switcher reveal" role="tablist" aria-label="案例选择">
+          <button class="case-tab active" type="button" role="tab" data-case="0"><small>CASE 01</small><strong>北美高客单新品 0—1</strong></button>
+          <button class="case-tab" type="button" role="tab" data-case="1"><small>CASE 02</small><strong>多产品规模化内容供给</strong></button>
+          <button class="case-tab" type="button" role="tab" data-case="2"><small>CASE 03</small><strong>AI Father’s Day 叙事</strong></button>
+        </div>
+        <div class="case-panel" id="casePanel">
+          <article class="case-story glass">
+            <div class="case-kicker" id="caseKicker">NORTH AMERICA / PERFORMANCE CREATIVE</div>
+            <h3 id="caseTitle">从产品卖点，走到车主生活。</h3>
+            <p id="caseSummary">面对高客单汽车产品，核心问题不是“功能讲得够不够多”，而是如何让北美车主快速看懂它与真实使用场景的关系。</p>
+            <details class="case-flow-details" id="caseFlowDetails" open>
+              <summary>查看创意链路 <span aria-hidden="true">⌄</span></summary>
+              <div class="case-flow" id="caseFlow"></div>
+            </details>
+            <div class="proof-strip" id="caseProof" aria-label="案例结果"></div>
+          </article>
+          <figure class="case-visual glass">
+            <img id="caseImage" src="public/posters/tonneau-2.jpg" alt="案例作品预览">
+            <figcaption class="case-role" id="caseRole">ROLE · INSIGHT / SCRIPT / CREATIVE DIRECTION</figcaption>
+            <div class="case-metrics" id="caseMetrics"></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="transition-band"><span>02 · COLLABORATION</span></div>
+
+    <section class="section collab-section" id="collaboration" data-zone="collaboration">
+      <span class="section-index">02</span>
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">How I Work</div><h2>让不同角色，<br><em>看到同一个目标。</em></h2></div>
+          <p>沟通协作不是“开更多会”，而是把模糊需求转化成清晰决策，让投放、拍摄和剪辑知道：为什么做、先做什么、什么必须改变。</p>
+        </div>
+        <div class="conflict-card glass reveal">
+          <div class="conflict-intro"><small>REAL-WORLD TENSION</small><h3>更多素材，<br>同样资源。</h3><p>已验证方向需要快速扩量，但原始素材和制作资源有限；如果只做机械换字幕、换车型，内容会迅速同质化。</p></div>
+          <div class="tension-grid" role="region" aria-label="协作角色，可左右滑动查看" tabindex="0">
+            <article class="tension"><b>01</b><h4>投放 / 业务</h4><p>希望快速补量、承接窗口期，并尽可能延长已验证方向的生命周期。</p></article>
+            <article class="tension"><b>02</b><h4>拍摄 / 剪辑</h4><p>排期已满，现有镜头有限；继续加工会出现画面重复和表达疲劳。</p></article>
+            <article class="tension"><b>03</b><h4>内容负责人</h4><p>需要在速度、质量和创意差异之间做优先级判断，并让方案可执行。</p></article>
+          </div>
+        </div>
+        <div class="workflow stagger reveal" role="region" aria-label="工作流程，可左右滑动查看" tabindex="0">
+          <article class="workflow-step" data-step="01" style="--i:0"><small>CLARIFY</small><h4>把一句需求，变成一页Brief</h4><p>明确市场、人群、业务目标、已验证变量、待测试变量和交付优先级。</p><div class="mini-artifact"><em>CREATIVE BRIEF</em><span></span><span></span><span></span></div></article>
+          <article class="workflow-step" data-step="02" style="--i:1"><small>DIVERGE</small><h4>先发散三档方案</h4><p>区分低成本扩量、局部补拍和全新创意路线，避免所有需求都进入同一制作方式。</p><div class="mini-artifact"><em>ROUTE MATRIX</em><span></span><span></span><span></span></div></article>
+          <article class="workflow-step" data-step="03" style="--i:2"><small>PRIORITIZE</small><h4>拆分重拍与复用变量</h4><p>新人群、新场景需要生产；Hook、字幕、CTA和局部镜头则进入模块化复用。</p><div class="mini-artifact"><em>SHOT PRIORITY</em><span></span><span></span><span></span></div></article>
+          <article class="workflow-step" data-step="04" style="--i:3"><small>LEARN</small><h4>让数据进入下一轮</h4><p>记录放大、改写和淘汰的方向，形成拍摄补充清单与下一轮创意优先级。</p><div class="mini-artifact"><em>LEARNING LOG</em><span></span><span></span><span></span></div></article>
+        </div>
+        <div class="feedback-demo reveal">
+          <article><small>VAGUE FEEDBACK</small><p>“这条看起来太像广告，不够北美。”</p></article>
+          <div class="feedback-arrow">→</div>
+          <article><small>ACTIONABLE DIRECTION</small><p>删除前3秒品牌露出，改用车主打开车门发现泥水的第一视角；口播从产品介绍改成真实问题表达。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="transition-band"><span>03 · SELECTED WORKS</span></div>
+
+    <section class="section works-section" id="works" data-zone="contact">
+      <span class="section-index">03</span>
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">Selected Works</div><h2>被做出来的，<br><em>才叫作品。</em></h2></div>
+          <p>覆盖效果广告、UGC、产品演示、品牌化内容与AI叙事。点击卡片可直接播放，查看市场、形式与我的具体职责。</p>
+        </div>
+        <div class="works-toolbar reveal">
+          <div class="work-filters">
+            <button class="work-filter active" data-work-filter="all">ALL WORKS</button>
+            <button class="work-filter" data-work-filter="performance">PERFORMANCE</button>
+            <button class="work-filter" data-work-filter="ai">AI CREATIVE</button>
+            <button class="work-filter" data-work-filter="brand">BRAND / TVC</button>
+          </div>
+          <div class="rail-controls"><button id="workPrev" type="button" aria-label="向前浏览">←</button><button id="workNext" type="button" aria-label="向后浏览">→</button></div>
+        </div>
+        <div class="swipe-hint">左右滑动浏览全部作品 · 点击卡片播放视频</div>
+        <div class="works-rail reveal" id="worksRail" tabindex="0" aria-label="作品列表"></div>
+        <div class="contact-panel glass reveal">
+          <div class="contact-grid">
+            <div>
+              <div class="eyebrow">Let’s Create Something Useful</div>
+              <h2>Good ideas<br><span>need a system.</span></h2>
+              <p>我希望继续做真正理解海外用户、同时能被团队稳定执行的内容。无论是内容策略、创意方向还是AI生产体系，都欢迎交流。</p>
+              <div class="contact-links">
+                <a class="button primary" href="mailto:18638658809@163.com">EMAIL ME ↗</a>
+                <a class="button" href="tel:18638658809">186 3865 8809</a>
+                <a class="button" href="public/resume.pdf" target="_blank" rel="noopener">下载简历 ↓</a>
+              </div>
+            </div>
+            <div class="experience" aria-label="工作经历">
+              <div class="experience-item"><time>2025.03<br>— NOW</time><div><strong>杭州棠联科技有限公司</strong><span>海外内容创意负责人 / 编导 · 独立站</span></div></div>
+              <div class="experience-item"><time>2024.09<br>— 2025.03</time><div><strong>杭州奥创光年互联网科技</strong><span>内容运营 · 品牌全案与AI内容生产</span></div></div>
+              <div class="experience-item"><time>2023.06<br>— 2024.08</time><div><strong>十月稻田（北京）科技</strong><span>短视频编导 · 矩阵账号与效果内容</span></div></div>
+            </div>
+          </div>
+          <div class="footer-line"><span>LIU WENJING · NORTH AMERICA CREATIVE LAB</span><span>HANGZHOU / OPEN TO GLOBAL CONTENT OPPORTUNITIES</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-mascot" id="floatingMascot" data-zone="home" aria-hidden="true"><img src="public/images/wenji-ip.png" alt=""></div>
+
+  <dialog id="videoDialog" class="video-dialog">
+    <button class="dialog-close" type="button" data-close-dialog aria-label="关闭">×</button>
+    <div class="video-shell">
+      <div style="position:relative;background:#000"><div class="video-loading" id="videoLoading">VIDEO LOADING…</div><video id="dialogVideo" controls playsinline preload="metadata"></video></div>
+      <div class="video-info"><small id="videoMeta"></small><h3 id="videoTitle"></h3><p id="videoDescription"></p></div>
+    </div>
+  </dialog>
+
+  <script>
+  (function(){
+    "use strict";
+    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var header = document.getElementById("siteHeader");
+    var nav = document.getElementById("mainNav");
+    var menuButton = document.getElementById("menuButton");
+    var progress = document.getElementById("scrollProgress");
+    var mascot = document.getElementById("floatingMascot");
+
+    menuButton.addEventListener("click", function(){
+      var open = nav.classList.toggle("open");
+      menuButton.classList.toggle("open", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+    });
+    nav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){nav.classList.remove("open");menuButton.classList.remove("open");menuButton.setAttribute("aria-expanded","false");});
+    });
+
+    function updateScroll(){
+      var max = document.documentElement.scrollHeight - innerHeight;
+      var ratio = max > 0 ? scrollY / max : 0;
+      progress.style.transform = "scaleX(" + ratio + ")";
+      header.classList.toggle("scrolled", scrollY > 24);
+    }
+    addEventListener("scroll", updateScroll, {passive:true}); updateScroll();
+
+    var revealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target);}});
+    }, {threshold:.12, rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll(".reveal,.stagger").forEach(function(el){revealObserver.observe(el);});
+
+    var sections = Array.from(document.querySelectorAll("main section[id]"));
+    var navLinks = Array.from(nav.querySelectorAll("a"));
+    var sectionObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          var id = entry.target.id;
+          navLinks.forEach(function(a){a.classList.toggle("active", a.getAttribute("href") === "#" + id);});document.body.classList.toggle("radar-active",id==="radar");
+          mascot.setAttribute("data-zone", entry.target.getAttribute("data-zone") || id);
+        }
+      });
+    }, {threshold:.36});
+    sections.forEach(function(section){sectionObserver.observe(section);});
+
+    var cases=[
+      {kicker:"NORTH AMERICA / PERFORMANCE CREATIVE",title:"从产品卖点，走到车主生活。",summary:"面对高客单汽车产品，核心问题不是“功能讲得够不够多”，而是如何让北美车主快速看懂它与真实使用场景的关系。",image:"public/posters/tonneau-2.jpg",role:"ROLE · INSIGHT / SCRIPT / CREATIVE DIRECTION",flow:[["BRIEF","新品需要在北美市场完成从功能认知到购买理由的建立。"],["CULTURAL SIGNAL","车主把车辆视为个人空间；实用升级也承担身份表达。"],["CREATIVE ROUTES","车库DIY、场景证明、车主第一视角三类路线同步测试。"],["LEARNING","连续验证后，将有效Hook和场景沉淀为后续内容资产。"]],metrics:[["5个月","核心结果持续爬坡"],["3 ROUTES","并行创意方向"],["0—1","完整内容链路"]],proof:[["$1.486M","归因收入"],["3.28","综合 ROAS"],["438 条","累计投放广告"]]},
+      {kicker:"MULTI-PRODUCT / CONTENT SUPPLY",title:"不是复制爆款，而是拆解结构。",summary:"将爆款内容拆成可迁移结构与必须重做的变量，让多个车型和市场共享有效方法，同时保留人群与场景差异。",image:"public/posters/modely.jpg",role:"ROLE · SYSTEM DESIGN / REVIEW / TEAM COORDINATION",flow:[["BRIEF","多个产品需要持续上新，但拍摄与剪辑资源有限。"],["SYSTEM","拆分通用Hook、产品证据、车型场景和本地化表达。"],["EXECUTION","建立脚本模板、素材标签、版本命名与分级审核机制。"],["LEARNING","复盘不是只看单条结果，而是更新下一轮素材优先级。"]],metrics:[["+67%","月均内容供给提升"],["100+","单月峰值素材"],["4 MARKETS","多市场适配经验"]],proof:[["+67%","月均供给提升"],["100+","单月峰值素材"],["4","市场同步适配"]]},
+      {kicker:"AI NARRATIVE / FATHER’S DAY",title:"让AI扩展场景，让人判断情感。",summary:"节日内容不从促销节点出发，而从北美父亲角色与家庭关系出发；AI负责扩充难以实拍的画面，人工负责文化语境与情绪一致性。",image:"public/posters/ai-fathers-day.jpg",role:"ROLE · INSIGHT / AI DIRECTION / HUMAN QA",flow:[["BRIEF","让产品进入Father’s Day语境，但不做生硬节日广告。"],["CULTURAL SIGNAL","父亲常被表达为安静的解决者，情感来自日常细节。"],["EXECUTION","AI生成家庭与回忆场景，真实产品镜头承担可信证明。"],["HUMAN QA","逐帧校验人物、产品、语言和情绪，避免只有画面没有叙事。"]],metrics:[["AI + REAL","生成与实拍融合"],["HUMAN QA","人工审美把控"],["STORY","拓展创意宽度"]],proof:[["40%+","生产效率提升"],["AI + REAL","生成与实拍融合"],["逐帧","人工语境校验"]]}
+    ];
+    var caseEls={kicker:document.getElementById("caseKicker"),title:document.getElementById("caseTitle"),summary:document.getElementById("caseSummary"),image:document.getElementById("caseImage"),role:document.getElementById("caseRole"),flow:document.getElementById("caseFlow"),metrics:document.getElementById("caseMetrics"),proof:document.getElementById("caseProof")};
+    function renderCase(index){
+      var c=cases[index];caseEls.kicker.textContent=c.kicker;caseEls.title.textContent=c.title;caseEls.summary.textContent=c.summary;caseEls.image.src=c.image;caseEls.role.textContent=c.role;
+      caseEls.flow.innerHTML=c.flow.map(function(item){return "<div><small>"+item[0]+"</small><p>"+item[1]+"</p></div>";}).join("");
+      caseEls.metrics.innerHTML=c.metrics.map(function(item){return '<div class="case-metric"><strong>'+item[0]+'</strong><span>'+item[1]+'</span></div>';}).join("");
+      caseEls.proof.innerHTML=c.proof.map(function(item){return '<div class="proof-item"><b>'+item[0]+'</b><span>'+item[1]+'</span></div>';}).join("");
+      document.querySelectorAll(".case-tab").forEach(function(tab){var active=Number(tab.dataset.case)===index;tab.classList.toggle("active",active);tab.setAttribute("aria-selected",String(active));});
+    }
+    document.querySelectorAll(".case-tab").forEach(function(tab){tab.addEventListener("click",function(){renderCase(Number(tab.dataset.case));});});renderCase(0);
+    var compactCaseMedia = window.matchMedia("(max-width:790px)");
+    var caseFlowDetails = document.getElementById("caseFlowDetails");
+    function syncCaseFlowDetails(){caseFlowDetails.open = !compactCaseMedia.matches;}
+    syncCaseFlowDetails();
+    compactCaseMedia.addEventListener("change", syncCaseFlowDetails);
+
+    var works=[
+      {title:"Model Y / 创意结构迭代",type:"performance",meta:"US / META",poster:"public/posters/modely.jpg",video:"public/videos/modely.mp4",description:"围绕前三秒Hook、使用场景和产品证明进行结构迭代。职责：洞察、脚本、创意方向与审核。"},
+      {title:"Bronco / 户外场景",type:"performance",meta:"US / META",poster:"public/posters/bronco.jpg",video:"public/videos/bronco.mp4",description:"将车型文化与户外使用场景结合，强化生活方式与功能证明。"},
+      {title:"电动踏板 / 功能演示",type:"performance",meta:"US / PERFORMANCE",poster:"public/posters/power-step.jpg",video:"public/videos/power-step.mp4",description:"用动作、安装和上下车场景快速解释高客单产品价值。"},
+      {title:"后斗盖 / 高客单创意",type:"performance",meta:"US / META",poster:"public/posters/tonneau-2.jpg",video:"public/videos/tonneau-2.mp4",description:"从车主场景切入，组织产品证据与视觉节奏。"},
+      {title:"AI / Father’s Day",type:"ai",meta:"US / AI NARRATIVE",poster:"public/posters/ai-fathers-day.jpg",video:"public/videos/ai-fathers-day.mp4",description:"以北美父亲角色和家庭关系建立情绪叙事，并完成人工语境校验。"},
+      {title:"AI / 多场景产品融合",type:"ai",meta:"GLOBAL / AI CREATIVE",poster:"public/posters/ai-fan.jpg",video:"public/videos/ai-fan.mp4",description:"以AI扩展人物与环境，再与真实产品镜头组合，增加本地化创意入口。"},
+      {title:"AI / 场景使用",type:"ai",meta:"GLOBAL / AI WORKFLOW",poster:"public/posters/ai-scene.jpg",video:"public/videos/ai-scene.mp4",description:"从场景生成、人工校验到真实素材融合的完整内容工作流。"},
+      {title:"电动后斗盖 / TVC",type:"brand",meta:"BRAND / TVC",poster:"public/posters/tvc-tonneau.jpg",video:"public/videos/tvc-tonneau.mp4",description:"以产品动作、使用场景和视觉节奏建立完整品牌印象。"},
+      {title:"Off-road / 品牌内容",type:"brand",meta:"BRAND / OUTDOOR",poster:"public/posters/brand-offroad.jpg",video:"public/videos/brand-offroad.mp4",description:"户外场景下的品牌化表达，展示不同于纯效果广告的成片能力。"}
+      ,{title:"Benz / 内容结构复用",type:"performance",meta:"US / PERFORMANCE",poster:"public/posters/benz.jpg",video:"public/videos/benz.mp4",description:"通过镜头结构与信息节奏复用，完成车型场景下的内容适配。"}
+      ,{title:"后斗盖 / 场景转化",type:"performance",meta:"US / META",poster:"public/posters/tonneau-1.jpg",video:"public/videos/tonneau-1.mp4",description:"围绕真实使用场景组织产品证据与转化理由。"}
+      ,{title:"后斗盖 / 产品证明",type:"performance",meta:"US / META",poster:"public/posters/tonneau-3.jpg",video:"public/videos/tonneau-3.mp4",description:"以可视化动作和局部细节强化高客单产品可信度。"}
+      ,{title:"AI / 后斗盖叙事",type:"ai",meta:"GLOBAL / AI CREATIVE",poster:"public/posters/ai-tonneau.jpg",video:"public/videos/ai-tonneau.mp4",description:"利用AI拓展难以实拍的环境与人物场景。"}
+      ,{title:"短视频 / 风扇创意",type:"brand",meta:"SHORT / SOCIAL",poster:"public/posters/short-fan.jpg",video:"public/videos/short-fan.mp4",description:"用短节奏和高识别画面完成社媒内容表达。"}
+      ,{title:"短视频 / 行车记录仪",type:"brand",meta:"SHORT / SOCIAL",poster:"public/posters/short-dashcam.jpg",video:"public/videos/short-dashcam.mp4",description:"围绕真实驾驶问题建立前三秒注意力与产品证明。"}
+    ];
+    var worksRail=document.getElementById("worksRail");
+    function renderWorks(filter){
+      worksRail.innerHTML="";
+      works.filter(function(work){return filter==="all"||work.type===filter;}).forEach(function(work,index){
+        var card=document.createElement("article");card.className="work-card";card.tabIndex=0;
+        card.innerHTML='<img loading="lazy" src="'+work.poster+'" alt="'+work.title+'"><div class="work-card-top"><span>'+String(index+1).padStart(2,"0")+'</span><span class="work-play">▶</span></div><div class="work-copy"><small>'+work.meta+'</small><h3>'+work.title+'</h3><p>'+work.description+'</p></div>';
+        function open(){openVideo(work);}card.addEventListener("click",open);card.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});worksRail.appendChild(card);
+      });
+    }
+    document.querySelectorAll(".work-filter").forEach(function(button){button.addEventListener("click",function(){document.querySelectorAll(".work-filter").forEach(function(b){b.classList.toggle("active",b===button);});renderWorks(button.dataset.workFilter);});});
+    document.getElementById("workPrev").addEventListener("click",function(){worksRail.scrollBy({left:-360,behavior:reduced?"auto":"smooth"});});
+    document.getElementById("workNext").addEventListener("click",function(){worksRail.scrollBy({left:360,behavior:reduced?"auto":"smooth"});});
+    renderWorks("all");
+
+    var videoDialog=document.getElementById("videoDialog"),dialogVideo=document.getElementById("dialogVideo"),videoLoading=document.getElementById("videoLoading");
+    function openVideo(work){
+      videoLoading.classList.remove("hidden");videoLoading.textContent="视频加载中…";dialogVideo.src=work.video;dialogVideo.poster=work.poster;document.getElementById("videoMeta").textContent=work.meta;
+      document.getElementById("videoTitle").textContent=work.title;document.getElementById("videoDescription").textContent=work.description;videoDialog.showModal();
+    }
+    dialogVideo.addEventListener("loadeddata",function(){videoLoading.classList.add("hidden");});
+    dialogVideo.addEventListener("canplay",function(){videoLoading.classList.add("hidden");});
+    dialogVideo.addEventListener("error",function(){videoLoading.classList.remove("hidden");videoLoading.innerHTML='<div class="video-error">视频加载失败，请检查网络后重试</div>';});
+    document.querySelectorAll("[data-close-dialog]").forEach(function(button){button.addEventListener("click",function(){button.closest("dialog").close();});});
+    document.querySelectorAll("dialog").forEach(function(dialog){
+      dialog.addEventListener("click",function(e){if(e.target===dialog)dialog.close();});
+      dialog.addEventListener("close",function(){if(dialog===videoDialog){dialogVideo.pause();dialogVideo.removeAttribute("src");dialogVideo.load();}});
+    });
+  })();
+  </script>
+  <script src="public/scripts/radar-particles.js" defer></script>
+  <script src="public/scripts/radar-particles-fallback.js" defer></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Particles.css';
 
 const SHAPES = { circle: 0, square: 1, ring: 2, sparkle: 3 };
