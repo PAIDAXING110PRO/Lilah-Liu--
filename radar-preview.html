@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>创意雷达 · 粒子动画预览</title>
+  <link rel="stylesheet" href="public/scripts/radar-particles.css">
+  <link rel="stylesheet" href="public/scripts/radar-labels.css">
+  <style>
+    *{box-sizing:border-box}
+    html,body{width:100%;height:100%;margin:0;background:#02050b}
+    .radar-section{position:relative;width:100%;height:100svh;min-height:400px;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 60%,#111b2a 0%,#070c15 45%,#02050b 100%)}
+    .radar-particles-fallback{position:absolute;inset:0;display:block;width:100%;height:100%;opacity:.82;pointer-events:none}
+    .radar-particles-root{position:absolute;inset:0;z-index:1}
+  </style>
+</head>
+<body>
+  <section class="radar-section" id="radar" aria-label="创意雷达粒子动画">
+    <canvas class="radar-particles-fallback" id="radarParticlesFallback" aria-hidden="true"></canvas>
+    <div class="radar-particles-root" id="radarParticlesRoot" aria-label="缓慢飘动的互动粒子画面"></div>
+  </section>
+  <script src="public/scripts/radar-particles.js" defer></script>
+  <script src="public/scripts/radar-particles-fallback.js" defer></script>
+</body>
+</html>
